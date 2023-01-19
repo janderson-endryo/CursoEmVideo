@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pais</title>
+</head>
+<body>
+    <h1>verificado de pais</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var txtpp = document.querySelector('input#txtp')
+            var pais = (txtpp.value) //pega valor
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>voce nasceu no <strong>${pais}</strong></p>`
+
+            if (pais == 'brasil' || pais == 'br') {
+                res.innerHTML += `<p>voce e <strong>brasileiro!</strong></p>`
+            }else {
+                res.innerHTML += `<p>voce e <strong>estrageiro</strong></p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>

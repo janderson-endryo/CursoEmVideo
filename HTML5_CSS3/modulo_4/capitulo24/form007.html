@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend></legend>
+
+            <div>
+                <label for="iestado">escolha o seu estado</label>
+    
+                
+                    <select name="estado" id="iestado">
+
+                        <optgroup label="regiao sudeste">
+
+                            <option value="MG">minas gerais</option>
+                            <option value="RJ">rio de janeiro</option>
+                            <option value="SP">sao paulo</option>
+                        
+                        </optgroup>
+
+                        <optgroup label="regiao nordeste">
+                            <option value="MA">maranhao</option>
+                            <option value="PE" selected>pernambuco</option>
+                            <option value="RN">rio grande do norte</option>
+                        </optgroup>
+
+                    </select>
+                
+            </div> <br>
+
+            <div>
+                <label for="iprof">profissao</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+
+                <datalist id="lstprof">
+
+                    <option value="DEV">DESENVOLVEDOR</option>
+                    <option value="PROF">PROFESSOR</option>
+                    <option>ADMINISTRADOR</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="imsg">mensagen:</label> <br>
+
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua aqui"></textarea>
+            </div>
+    
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </div>
+        </fieldset>
+
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extra-dom</title>
+
+    <style>
+        .font{
+            font: 30px serif;
+        }
+
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="text" class="font">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus numquam eligendi obcaecati ea quae illo quod pariatur, saepe sunt voluptates voluptatum harum? Explicabo, amet. Modi at minus alias autem deserunt.
+    </p>
+
+    <script>
+        var tt = document.querySelector("p#text")
+        tt.classList.add('blue')
+        tt.classList.remove('font')
+        if(tt.classList.contains('blue')){
+            document.write('a frase a cima tem uma class blue')
+        }
+        tt.style.color = 'red'
+
+        var div = document.createElement('div')
+        div.innerHTML = 'ola mundo'
+        console.log(div)
+
+        
+    </script>
+</body>
+</html>

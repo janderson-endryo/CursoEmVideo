@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Share+Tech+Mono & display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0:#1940CF;
+    --cor1:#112C8F;
+    --cor2:#09194F;
+    --cor3:#061033;
+    --corbmw:#081543;
+    --fonte-especial: 'Share Tech Mono', 'monoespaçado';
+    --fonte-padrao: 'serif'
+}
+
+body{
+    background-color:rgb(243, 245, 253);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor3));
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header h1{
+    color: white;
+    font-size: 2.7em;
+    padding-bottom:30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header p{
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.5em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    font-family: var(--fonte-especial);
+}
+
+nav{
+    background-color: var(--cor3);
+    padding: 10px; /*usa o padding normal para deixa tudo centralizado*/
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.281);
+    font-family: var(--fonte-especial);
+    
+}
+
+nav  a{
+    color:white;
+    padding: 10px; /*usa o padding normal para deixa tudo centralizado*/
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition-duration: .5s;
+    font-size: 20px;
+    font-family: var(--fonte-especial);
+}
+
+nav a:hover{
+    background-color: white;
+    color: var(--corbmw);
+}
+
+main{
+    background-color:white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--corbmw);
+    font-family: var(--fonte-especial);
+    
+}
+
+main h2{
+    color: var(--cor3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px; 
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em; /*espaçamento entre as linha do paragrafos*/
+}
+
+main img{
+    width: 100%;
+}
+
+footer{
+    background-color:var(--corbmw) ;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+

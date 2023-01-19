@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media em HTML5</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+
+    <p>teste essas imagens em varios dispositivos ou de zoom na imagen</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="flexível">
+    </picture>
+
+    <h1>reproduzindo audio</h1>     
+
+    <p>vamos aprende a repdroduzir audio em HTML5</p>
+
+    <audio controls preload="metadata" autoplay loop src="media/Fousheé - Deep End (Lyrics)(MP3_160K).mp3"> </audio>
+        
+    <p>esse forma acima ficou meio limitada</p>
+
+    <h2>outra formar mais atual</h2>
+
+    <p>a ordem e muito importante, essa forma a baixo e tipo a imagen dinamica so que em audio</p>
+
+<audio controls preload="metadata" autoplay loop>
+    <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.mp3" type="audio/mpeg">
+
+    <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.ogg" type="audio/ogg">
+
+    <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.wav" type="audio/wav">
+    
+    <p>troque de navegado pois nao tem suporte para audio <a target="_blank" href="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip" download="Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip" type="application/zip"> para download aqui</a></p> 
+</audio>
+    
+
+    <p>voce pode adicinar o audio de varios formatos pois tem navegado que nao suporta todo formarto ai para nao te problema voce adiciona todos disponivel</p> 
+
+    <p>paramentro sao muitos importantes</p>
+
+    
+    
+
+</body>
+</html>

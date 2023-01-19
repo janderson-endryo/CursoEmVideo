@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio de tabela completa </title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cinza{
+            background-color: gray;
+        }
+
+        .res{
+            color: white;
+            text-align: justify;
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <thead>
+            <th class="cinza" scope="col">area</th>
+            <th class="cinza" scope="col">disciplina</th>
+            <th class="cinza" colspan="2" scope="colgroup">notas <br> nota 1 nota 2</th>
+            <th class="cinza" scope="col">media</th>
+        </thead>
+
+        <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">exatas</th>
+                    <td>matematica</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <td>fisica</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <td>quimica</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <td>biologia</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <th class="cinza res" colspan="4" scope="row">media de exatas</th>
+                    <td class="cinza res">10.0</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">humanas</th>
+                    <td>historia</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <td>geografia</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+
+                <tr>
+                    <th class="cinza res" colspan="4" scope="row">media de humanas</th>
+                    <td class="cinza res">10.0</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>

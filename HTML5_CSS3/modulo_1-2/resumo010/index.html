@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo de link</title>
+</head>
+<body>
+    <h1>interno e externos</h1>
+
+    <p>use a tag  &lt; a &gt; para criar o link </p>
+
+    <p>OBS: o principa dessa tag e os parametros ela se inicia ja com o parametro <br> 
+    href"aqui fica a url"</p>
+
+    <p>OBS: a diferença entre o link interno e externo e na url de destino e os parametros</p>
+
+    <p>Para poder controlar onde o site de destino vai abrir, podemos usar o parametro <mark>target</mark>
+    que suporta os seguintes valores:</p>
+
+    <ul>
+        <li>_blank vai abrir o link em uma nova janela em branco</li>
+        <li>_self vai abrir o link na janela ou frame atual (padrão)</li>
+        <li>_top vai desfazer todos os frames e abrir o destino no navegador completo</li>
+        <li> _parent similar ao uso do _top em uma referência à janela mãe /li>
+        <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir</li>
+    </ul>
+    <p>Existe um recurso bem interessante para links que é indicar qual é a
+        natureza do destino usando o atributo rel. Esse atributo aceita vários
+        valores, entre eles vou citar</p>
+
+    <ul>
+        <li>‣next indica que o link é para a próxima parte do documento atual</li>
+        <li>‣prev indica que o link é para a parte anterior do documento atual</li>
+        <li>‣author indica que é um link para o site do autor do artigo atual</li>
+        <li>‣external indica que é um link para outro site que não faz parte do site</li>
+        <li>nofollow indica que é um link para um site não endossado, como um link pago</li>
+
+    </ul>
+
+    <p>exemplo a baixo, link externo</p>
+
+    <p> <a href="https://www.youtube.com/channel/UC3fsUHETPfQ3onyrSjT8KNA/playlists" target="_blank" real="external">meu canal do you tube</a>
+    </p>
+
+    <p>
+    <a href="index2.html" target="_blank" real="next"> va para segunda pagina link interno </a>
+    </p>
+
+    <p>
+    <a href="pagina2/noticias.html" target="_blank" real="next">va para pagina de noticias que esta em outra pasta<a> </p>
+
+    <h2>link para download</h2>
+
+    <p>OBS: a principal diferença vai esta nos parametros</p>
+
+    <ul>
+        <li> <a href="livros/meulivro.pdf" target="_blank" download="meulivro.pdf" type="application/pdf" >baixa o livro em pdf</a> </li>
+
+        <li><a href="livros/meulivro.zip" download="meulivro.zip" type="application/zip">baixa o livro em zip</a></li>
+    </ul>
+
+    <p>o parametro downlond e o type vao muda dependendo do arquivo</p>
+
+
+
+    
+
+</body>
+</html>

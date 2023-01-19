@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixa</title>
+
+    <style>
+        h1{
+            line-height: 300px; 
+            text-align: center;
+
+            background-color: cadetblue;
+
+            height: 300px; /* altura*/
+            width: 300px; /* largura*/
+
+
+            /* border-width: 8px; // tamanho da borda
+            border-style: solid; //como vai se o essa borda 
+            border-color: rgb(255, 0, 0);  // cor da borda */
+
+            /*simplificando com shorthands */
+
+            border: 10px solid rgb(255, 238, 3);
+
+
+
+           /* padding-top: 15px; // espaço interno entre a borda e a caixa 
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px; */
+
+            /*simplificando com shorthands */
+
+            /*se todas forem iguais basta informa no fina 10px que ele vai bota o mesmo valo para todas*/
+            
+            /*padding 10px 20px o primeiro e para cima e para baixo e o segundo e direita e esquerda*/
+
+            padding:10px; /* tem ordem top,right,bottom,left igua a relogio */
+
+            /* margin-top: 10px;  // espaço externo depois das bordas
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+
+            margin: auto; /*centraliza a caixa ou elementos*/
+
+           /* outline-width: 10px;  //tamanho da out----entre a margin e a border
+            outline-style: solid; //como vai ser essa out
+            outline-color: black; //cor da out */
+
+            /*simplificando com shorthands */
+
+            outline: 7px solid  rgb(255, 0, 0);
+            
+
+            /*display: inline;
+            display: block;*/ /* posso altera o tipo de box */
+        }
+    </style>
+</head>
+<body>
+    <h1>box-level</h1> <!-- display: block = box-level -->
+    <a href="#">inline-level</a> <!-- display: inline-box = inline-level --> <span>teste</span>
+
+</body>
+</html>

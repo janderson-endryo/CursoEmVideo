@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, rgb(5, 253, 171),rgba(10, 255, 173, 0.884), rgba(10, 245, 225, 0.952),rgba(0, 217, 255, 0.932));
+            background-attachment: fixed;
+            font:700 sans-serif;
+            color: white;
+            text-align: justify;
+            text-shadow: 1px 1px 1px rgb(255, 0, 255);
+            text-indent: 5px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>selecionando</h1>
+    <h2>por marca</h2>
+    <p>getElementsByTagName('p')[0]</p>
+
+    <h2>por id</h2>
+    <p id="d">getElementById(d)</p>
+
+    <h2>por nome</h2>
+    <p name="aa">getElementsByName(aa)[0]</p>
+
+    <h2>por classe</h2>
+    <p class="see">getElementsByClassName(see)[0]</p>
+
+    <h2>por seletor</h2>
+    <p id="sl">querySelector('p#sl')</p>
+
+    <script>
+        var m = document.getElementsByTagName('p')[0] // ele começa a conta no  zero 0, o p e do paragrafo
+        document.write(`o resultao e : ${m.innerHTML}<br>`) // innertext pega so o texto, e otro o html
+
+        var i = document.getElementById('d')
+        document.write(`o resultado e : ${i.innerHTML}<br>`)   
+        
+        var nn = document.getElementsByName('aa')[0]
+        document.write(`o resultado e : ${nn.innerHTML}<br>`)
+
+        var cla = document.getElementsByClassName('see')[0]
+        document.write(`o resultado e : ${cla.innerHTML}<br>`)
+
+        var to = document.querySelector('p#sl')
+        document.write(`o resultado e : ${to.innerHTML}`)// class = . em vez do #
+    </script>
+</body>
+</html>

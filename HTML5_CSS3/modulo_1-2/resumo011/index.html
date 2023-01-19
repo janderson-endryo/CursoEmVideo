@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo 011</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+
+    <p>para adiciona imagens dinamica precisamos da tag picture para concentrar as imagens <br> dentro dela adicionamos um imagens e tambem um <mark>source</mark> ele serve para varios tipo de media como no exemplo a baixor </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="flexível">
+    </picture>
+
+    <big>
+        <pre>
+            picture
+                source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"
+                source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"
+                img src="imagens/foto-g.png" alt="flexível"
+            picture
+        </pre>
+    </big>
+
+    <p>OBS: Note que a tag <source> possui três atributos:</p>
+
+    <p>type vai indicar o media type da imagem que usamos (veja mais informações
+    sobre media types no capítulo 10) </p>
+
+    <p> srcset vai configurar o nome da imagem que será carregada quando o tamanho
+    indicado for atingido</p>
+
+    <p>media indica o tamanho máximo a ser considerado para carregar a imagem
+    indicada no atributo srcset</p>
+
+    <h1>audio</h1>
+
+    <pre>para adiciona um audio use a tag audio e vamos muda seu padrao retira o atributo e adiciona um source com outro atributos como no exemplo a baixo</pre>
+
+    <audio controls preload="metadata" autoplay loop>
+        <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.mp3" type="audio/mpeg">
+
+        <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.ogg" type="audio/ogg">
+
+        <source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.wav" type="audio/wav">
+        
+        <p>troque de navegado pois nao tem suporte para audio <a target="_blank" href="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip" download="Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip" type="application/zip"> para download aqui</a></p> 
+    </audio>
+
+    <big>
+        <pre>
+            audio controls preload="metadata" autoplay loop>
+                source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.mp3" type="audio/mpeg"
+                source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.ogg" type="audio/ogg"
+                source src="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.wav" type="audio/wav"
+        
+                troque de navegado pois nao tem suporte para audio a target="_blank"
+                 href="media/Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip"
+                  download="Halsey - BALENCIAGA (Y3MR_ Remix)(MP3_160K)_1.zip" type="application/zip"> para download aqui
+            audio
+        </pre>
+    </big>
+
+    <p>OBS: voce pode adiciona dowlond em qualquer parte da midia do audio ou da imagem e etc </p>
+
+<pre>
+‣ O atributo preload indica se o áudio será pré-carregado ou não e aceita três
+valores:
+
+๏ metadata vai carregar apenas as informações sobre o arquivo (tamanho,
+tempo, informações de direitos, etc)
+
+๏ none não vai carregar absolutamente nada até que o usuário clique no botão
+play ou um script inicie a reprodução
+
+๏ auto (padrão) vai carregar o arquivo de áudio inteiro assim que a página for
+carregada, mesmo que o usuário nunca aperte o play
+
+‣ O atributo controls vai apresentar o player na tela. Caso não seja colocado na tag
+o controle será transparente e o usuário não poderá interagir com ele.
+
+‣ O atributo autoplay, quando inserido, vai iniciar a reprodução do áudio assim que
+a página for carregada.
+
+‣ O atributo loop vai fazer com que o áudio seja repetido eternamente assim que
+terminar a sua reprodução. 
+</pre>
+
+<p>OBS: a ordem no source e muito importante e voce pode adiciona varios formatos pois o navegado pode nao aceita um tipo ai ele pega o outro </p>
+
+
+    
+
+
+
+
+
+
+
+</body>
+</html>

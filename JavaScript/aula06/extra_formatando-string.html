@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatando string</title>
+
+    <style>
+        body{
+            font:italic normal 20.3px arial,serif;
+            
+            background-image: linear-gradient(to top, rgba(67, 235, 207, 0.911), rgba(59, 133, 230, 0.808), rgba(60, 41, 230, 0.829) );
+            background-attachment: fixed;
+        }
+
+        main{
+            background-color: white;
+            width: 700px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: justify;
+            text-shadow: 10px 10px 15px black;
+            box-shadow: 8px 8px 19px #2122279f;
+            
+        }
+
+        h2{
+            text-decoration: underline;
+        }
+
+        h1{
+            text-indent: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>formato string</h1>
+        <h2>Uso de substring</h2>
+        <script>
+            
+            var subs = prompt("me informa uma frase aleatoria")
+            subs = subs.substr(10,5)
+            document.writeln(`um exemplo de Uso da substring: ${subs}`)// elimina os 10 primeiro digitos e mostra os 5 ultimos nesse caso mais pode se modificado
+        
+        
+            document.write(`<h2>repeat</h2> um exemplo de repetiçao para string ou substring: <br> ${subs.repeat(10)} `) // repetiçao de string ou substring
+
+            var menos = prompt("me informa uma palavra com espaços extras")
+
+            document.write(`<h2>guarnição</h2> exemplo do uso da guarnição ${menos.trim()}`)
+            // serve para remove espaços extra ao redor da string : Não remove os espaços entre o texto e as palavras.
+
+            var re = prompt("me informa uma frazer com duas palavras")
+            var modificado = re.replace( /o/g, "--")// ou ("casa", "apartamento")
+
+            document.write(`<h2>replace</h2> exemplo de replace: ${modificado} <br>`)
+
+            document.write(`ele nao muda a variavel original: ${re}`)
+        </script>
+
+        <h1>outras formataçoes sem exemplos</h1>
+        
+        <p>string.split(breakpoint)  string.match(regex)  string.includes(substring, position)  string.search(regex)  string.charAt(position)  string.startsWith</p>
+    </main>
+
+</body>
+</html>

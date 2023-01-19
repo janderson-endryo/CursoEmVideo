@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo</title>
+    <style>
+    
+        h1{
+            height: 100px; /* altura*/
+            width: 300px; /* largura*/
+            background-color: darkturquoise;
+            color: white;
+            text-align: center;
+            line-height: 100px; /*colocar o texto no meio da caixa */
+            margin: auto;
+
+        }
+
+        #marg{ /*espaço externo depois das bordas*/
+            background-color: coral;
+            margin-top: 11px;
+            margin-right: 40px;
+            margin-bottom: 1px;
+            margin-left: 40px;
+            
+            /*margin: auto; centraliza a caixa ou elementos. margin: 30px com shorthands */
+        }
+
+        #paddi{ /* espaço interno entre a borda e a caixa */
+            padding-top: 23px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            padding-left: 50px;
+            background-color: brown;
+            margin-top: 8px;
+
+            /*simplificando com shorthands */
+
+            /*se todas forem iguais basta informa no fina 10px que ele vai bota o mesmo valo para todas*/
+            
+            /*padding 10px 20px o primeiro e para cima e para baixo e o segundo e direita e esquerda*/
+            
+        }
+        p#border{
+            border-width: 1px;
+            border-style: solid;
+            border-color: chartreuse;
+            /*simplificando com shorthands
+
+            border: 10px solid rgb(255, 238, 3); */
+
+            font: 700 21px serif;
+            text-align: center;
+
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.336); /*deixado texto com sobra */
+        }
+        p#outli{ /*entre a margin e a border*/
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: darkslateblue;
+            /* simplificando com shorthands 
+            outline: 7px solid  rgb(255, 0, 0);*/
+        }
+        h3#box{
+            background-color: darkgray;
+            box-shadow: 1px 1px 5px black; /*caixa com sobras*/
+        }
+
+        h3#radius{
+            border-radius: 10px 0px;
+            background-color: blue;
+            /* border-radius: 10px */
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        h4{ /*bordas decoradas*/
+            border: 10px solid transparent;
+            padding: 10px;
+            border-image-source: url('favicon.ico');
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            /*shorthand*/
+            border-image: url('favicon.ico') 21 repeat;
+        }
+
+        /*display: inline;
+        display: block;*/ /* posso altera o tipo de box */
+
+
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>altura e largura</h1>
+    </header>
+
+    <main>  <!--conteudo pricipal-->
+        <section>
+            <article>
+                <aside id="paddi">padding</aside>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="marg">margen</h2>
+        </section>
+
+        <section>
+            <p id="border">border e sobra no texto</p>
+        </section>
+
+        <section><h3 id="box">sombra na caixa</h3></section>
+
+        <section><h3 id="radius">border-radius</h3></section>
+    </main>
+
+    <footer> <!--rodape-->
+        <p id="outli">outline</p>
+    </footer>
+
+    <div id="bola"></div>
+
+    <h4>bordas decoradas:</h4>
+</body>
+</html>

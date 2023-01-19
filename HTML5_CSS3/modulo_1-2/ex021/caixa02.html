@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags </title>
+
+    <style>
+        body{
+            font-family:sans-serif;
+            background-color: rgb(185, 222, 255);
+            text-align:justify;
+            margin: 0px;
+        }
+
+        header{
+            background-color: rgba(0, 255, 0, 0.856);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: rgba(255, 60, 0, 0.856);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.377);
+        }
+
+        nav{
+            background-color: aqua;
+            padding: 2px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349); /*sombras nas bordas*/
+            /* box-shadow:inset 1px 1px 10px rgba(0, 0, 0, 0.349); /*sombras internas*/
+            text-align: center;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            margin-right: 50px;
+            
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+
+        
+        nav >a:visited{
+            color: darkgreen;
+        }
+
+        nav >a:active{
+            color: red;
+        }
+
+        article{
+            background-color: dodgerblue;
+            padding: 5px;
+            
+        }
+
+        article > aside{
+            background-color: rgb(229, 30, 255);
+            
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+
+        <h1>agrupamento de tags</h1>
+
+        <nav> <!--menu-->
+
+        <a href="#">link</a> 
+        <a href="#">link</a> 
+        <a href="#"> link</a>
+
+        </nav>
+
+    </header>
+
+    <main> <!--conteudo pricipal-->
+
+        <section id="futebol">
+            <p>esporte politica futebol</p>
+        </section>
+
+        <section id="carros">
+
+            <article>
+
+                <h2>bmw</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia nisi beatae et recusandae iste, ea, perferendis est explicabo minima reiciendis dolore aspernatur libero nesciunt suscipit facilis dignissimos. Iure, reprehenderit!
+                </p>
+                <aside>
+                    <p>todas as informaçoes fora retira do fornecedo</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer> <!--rodape-->
+
+        <p>desenvolvido por janderson endryo</p>
+
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>

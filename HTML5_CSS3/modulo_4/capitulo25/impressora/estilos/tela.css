@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* estilo para telas */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+header > h1 {
+    text-align: center;
+}
+
+nav {
+    font-size: 1.3em;
+    min-width: 300px;
+    max-width: 97vw;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+nav > p {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+nav > p > a {
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+h2{
+    line-height: 1.3em;
+}
+
+
+article {
+    display: block;
+    min-width: 300px;
+    max-width: 97vw;
+    padding: 20px;
+    margin: auto;
+}
+
+article > p{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.7em;
+}
+
+
+

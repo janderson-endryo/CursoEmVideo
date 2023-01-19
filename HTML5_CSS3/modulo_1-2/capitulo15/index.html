@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo de id e class</title>
+
+    <style>
+        #idd{
+            color: blue;
+        }
+
+        .clla{
+            color: yellow;
+        }
+
+        .destaque{
+            background-color: rgba(255, 0, 51, 0.63);
+        }
+
+        div:hover{
+            color: cyan;
+        }
+
+        pre::before{
+            content: "exemplos ";
+            font-weight: normal;
+            color: rgb(115, 255, 0);
+        }
+
+        .especial:hover{
+            color: darkred;
+        }
+
+        .especial::after{
+            content: " pseudo-class ";
+            color: deeppink;
+
+        }
+
+        ul > p::after{
+            content: " pode combinado com pseudo elemento ou class";
+            color: rgb(255, 210, 7);
+        }
+
+        ul > p {
+            color: darkslateblue;
+        }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>id class pseudo-classes pseudo-elementos</h1>
+
+    <p>como chma cada um id = # , class = . , pseudo-class = : pseudo elementos = :: filho dentro de um tag = > e para combina class com ou outro e so bota o . na frente exemplo .especial::hover</p> 
+    <!-- id = #  class = . pseudo-class = : pseudo-elemento = :: filhor >   .especial:hover .especial::after-->
+
+    <h1>id e class</h1>
+    <p id="idd">exemplo de id</p>
+    <p class="clla">exemplo de class</p>
+    <p class="clla destaque"> uma class ela mode esta em varias tagce podemos ter duas class em uma tag e so coloca do lado sem virgula</p>
+
+    <h1>pseudo-class</h1>
+    <div>pseudo</div>
+
+    <h1>pseudo-elementos</h1>
+    <pre>elementos</pre>
+
+    <h1>outros exemplos</h1>
+    <ul>
+        <li><a href="" class="especial"> link aleatorio</a></li>
+        <p> filhor ></p>
+    </ul>
+    <!-- pseudo-classes :citar :hover, :visited, :active, :checked, :empty e :focus.-->
+    <!--pseudo-elementos::before, ::after, ::first-letter, ::first-line.-->
+</body>
+</html>

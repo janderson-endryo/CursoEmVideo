@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tratamento de dados em JS</title>
+
+    <style>
+        body{
+            background-color: rgb(98, 0, 255);
+            color: cornsilk;
+            font: 25pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>olá, mundo!</h1>
+    <p>já me livrei da maldição</p>
+
+    <script>  
+    prompt("qual e seu nome") //string
+
+    // string + string =  para concatenaçao 
+    // number + number = para adiçao
+
+    var n1 = Number.parseInt(prompt("me diz um numero")) //trasformando para numero
+
+    var n2 = Number.parseFloat(prompt("me diz outro numero")) // o comando parse define o tipo de dados para defini de qual e o tipo ele vai ser
+
+    var n3 = Number(prompt("me informa mais um numero")) // trasformando para numero so que agora o JS se vira para descobri qual e seu tipo
+
+    var s = n1+n2+n3
+
+    alert("o resultado dos segintes numeros " + n1 + "+" + n2 + "+" + n3 + " é igua a " + s ) // concatenaçao 
+
+    var s = n1 + n2
+
+    alert("o resultado dos segintes numeros " + n1 + "+" + n2 + " é igua a " + String(s)) // ou s.toString() trasformando number em string
+
+    var s = n1+ n2
+    
+    alert(`o resultado das somas entre ${n1} e ${String(n3)}e igual a ${s}`) // template string: outra forma de mostra resultados
+
+
+    // cuidado com os comandos que começa com letra maiuscula
+    </script>
+</body>
+</html>

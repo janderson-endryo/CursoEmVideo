@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>super contador </title>
+</head>
+<body>
+    <header>
+            <h1>vamos contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="iinicio">inicio:</label>
+            <input type="number" name="inicio" id="iinicio" required>
+        </div>
+
+        <div>
+            <label for="ifim">fim:</label>
+            <input type="number" name="fim" id="ifim" required>
+        </div>
+
+        <div>
+            <label for="ipasso">passo:</label>
+            <input type="number" name="passo" id="ipasso" required>
+        </div>
+
+        <div>
+            <input type="button" value="contar" onclick="contar()">
+        </div>
+
+        <div id="res">
+            preparando a contagem.....
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; janderson-endryo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

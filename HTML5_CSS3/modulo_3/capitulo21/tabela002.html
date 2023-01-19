@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*cabeçalho fixo em tabelas*/
+        }
+        caption{
+            font-size: 1.4em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody >tr:nth-child(odd) { /*2n ou 2n-1 ou odd ou even tem mais variaçoes*/
+            background-color: lightgray;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead > tr > th{ /*cabeçalho fixo em tabelas*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+
+    -->
+
+    <table>
+        <caption>populaçao das unidades federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">estado</th> <!--scope serve para da sematica,ajuda o google -->
+                <th scope="col" style="width: 50px;">populaçao</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num"><strong>00000000000</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+
+    <style>
+        body{
+            font: arial,sans-serif;
+            background-color: rgba(150, 26, 26, 0.801);
+
+        }
+
+        #tt{
+            font-size: 24px;
+        }
+
+        div:hover{
+            color: rgb(0, 110, 255);
+        }
+
+        div > p {
+            display: none;
+            color: white;
+            background-color: rgb(65, 255, 7);
+            width: 400px;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o mause no texto a baixo</p>
+    <div>passe o mause aqui
+        <p id="tt">use o > para seleciona o filhor de uma tag dentro da outra use o : para chama as  pseudo-classes</p>
+    </div>
+
+</body>
+</html>
